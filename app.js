@@ -18,9 +18,11 @@ conexion.connect(function(error){
     }
 });
 
+//nos lanza un texto si el servidor esta bien
 app.listen('3000',function(){
     console.log('servidor OK');
 })
+
 
 app.get('/',function(req,res){
     res.send('ruta INICIO')
