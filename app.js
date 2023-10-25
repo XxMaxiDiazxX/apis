@@ -9,6 +9,7 @@ let conexion = mysql.createConnection({
     database: "prueba"
 })
 
+// esta funcion nos sirve para verificar si esta la conexion con el servidor
 conexion.connect(function(error){
     if (error){ 
         throw error;
@@ -16,6 +17,7 @@ conexion.connect(function(error){
         console.log("Conexión exitosa");
     }
 });
+
 app.listen('3000',function(){
     console.log('servidor OK');
 })
