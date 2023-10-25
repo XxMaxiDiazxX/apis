@@ -23,10 +23,11 @@ app.listen('3000',function(){
     console.log('servidor OK');
 })
 
-
+// funcion para hacer prueba en postman en la ruta de inicio
 app.get('/',function(req,res){
     res.send('ruta INICIO')
 })
+
 
 app.get('/api/articulos', (req,res)=>{
     conexion.query('SELECT * FROM articulos', (error,filas)=>{
