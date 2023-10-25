@@ -1,4 +1,4 @@
-
+// se definen las variables necesarias
 let express = require('express');
 let mysql = require('mysql');
 let app = express();
