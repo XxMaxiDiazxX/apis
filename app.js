@@ -2,6 +2,7 @@ let express = require('express');
 let mysql = require('mysql');
 let app = express();
 
+
 let conexion = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -28,7 +29,7 @@ app.get('/',function(req,res){
     res.send('ruta INICIO')
 })
 
-
+//
 app.get('/api/articulos', (req,res)=>{
     conexion.query('SELECT * FROM articulos', (error,filas)=>{
         if(error){
