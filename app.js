@@ -24,12 +24,4 @@ app.get('/',function(req,res){
     res.send('ruta INICIO')
 })
 
-app.get('/api/articulos', (req,res)=>{
-    conexion.query('SELECT * FROM articulos', (error,filas)=>{
-        if(error){
-            throw error;
-        }else{
-            res.send(filas);
-        }
-    });
-});
+
