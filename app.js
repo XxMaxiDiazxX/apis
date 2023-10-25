@@ -1,8 +1,9 @@
+
 let express = require('express');
 let mysql = require('mysql');
 let app = express();
 
-
+//se ponen los datos de la base de datos
 let conexion = mysql.createConnection({
     host: "localhost",
     user: "root",
